@@ -3,7 +3,7 @@
 
 @import "base/variables"
 @import "base/mixins"
-
+@import "base/fonts"
 @import "layout/header"
 
 @import "layout/sections/welcome"
@@ -19,6 +19,20 @@ body
   max-width: 960px
   margin: 0 auto
   text-align: center
+  height: 100%
+a
+  transition: all 0.5s ease
+  text-decoration: none
+  cursor: pointer
+  &:link, &:visited
+    font: 14px/24px PlayfairDisplayRegular, sans-serif
+    color: #000
+    text-decoration: underline
+  &:hover
+    text-decoration: none
+section
+  padding: 15px 10px
+
 
 .colored-background
   background-color: $bg-color
@@ -32,6 +46,35 @@ body
     right: 0
     opacity: 0.15
 
+.welcome-section
+  height: 100vh
+  &:before
+    background: url("../../images/welcome-bg.png") 50% 50% no-repeat
+    background-size: cover
+.top-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  img
+    height: 50px
+    width: 140px
+  h1
+    display: inline-block
+    text-indent: -9999px
+.header-nav
+  text-transform: uppercase
+  font: 13px "Roboto Black", sans-serif
+  ul
+    display: flex
+    li
+      margin-right: 15px
+.welcome-info-center
+  height: 100%
+  display: flex
+  align-items: center
+  .welcome-info
+    h2
+      font: 32px "PlayfairDisplayBlack", sans-serif
 
 .main-footer
   padding: 70px 0
