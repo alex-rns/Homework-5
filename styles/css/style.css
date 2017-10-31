@@ -165,3 +165,52 @@ a:hover {
   box-sizing: border-box;
 }
 
+body {
+  color: #fff;
+}
+
+.wrapper {
+  min-height: calc(100% - 400px);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.colored-background {
+  background-color: #2c1a59;
+  position: relative;
+}
+.colored-background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.15;
+}
+
+.main-footer {
+  padding: 70px 0;
+  height: 400px;
+}
+.main-footer:before {
+  background: url("../../images/footer-bg.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.main-footer .top-footer {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .our-studio, .stay-in-touch {
+  width: 320px;
+}
