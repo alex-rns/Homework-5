@@ -226,7 +226,11 @@ p {
 }
 
 section {
-  padding: 70px 10px;
+  padding: 60px 10px;
+}
+
+header {
+  padding-bottom: 60px;
 }
 
 .vertical-line:after {
@@ -239,6 +243,7 @@ section {
 }
 
 button {
+  margin: 20px 0;
   transition: all 0.5s ease;
   font: 16px "HammersmithOne", sans-serif;
   background: none;
@@ -321,6 +326,9 @@ button:hover {
   background: #00e0d0;
 }
 
+.our-story-section header {
+  padding-bottom: 20px;
+}
 .our-story-section .container {
   justify-content: center;
   display: flex;
@@ -332,6 +340,9 @@ button:hover {
 .our-story-section img {
   width: 230px;
   height: 230px;
+}
+.our-story-section p {
+  margin-bottom: 10px;
 }
 
 .video-section {
@@ -356,18 +367,119 @@ button:hover {
   font: 16px "RobotoBlack", sans-serif;
 }
 
-.expertise-section h3 {
-  color: #413d4b;
-}
-
-.expertise-list {
+.expertise-section .expertise-list {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
 }
-.expertise-list li {
+.expertise-section .expertise-list img {
+  padding-bottom: 30px;
+}
+.expertise-section .expertise-list li {
+  padding-top: 70px;
   width: 350px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.expertise-section .expertise-list li:before {
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+.expertise-section .expertise-list p {
+  text-align: center;
+  padding: 0 50px;
+}
+.expertise-section .expertise-list h3 {
+  font: 14px "RobotoBlack", sans-serif;
+  text-transform: uppercase;
+  color: #413d4b;
+  padding-bottom: 20px;
+}
+
+.web-disign:before {
+  background: url("../../images/web-design.png") no-repeat;
+}
+
+.branding-identity:before {
+  background: url("../../images/branding-identity.png") no-repeat;
+}
+
+.mobile-app:before {
+  background: url("../../images/mobile-app.png") no-repeat;
+}
+
+.search-optimization:before {
+  background: url("../../images/search-optimization.png") no-repeat;
+}
+
+.game-development:before {
+  background: url("../../images/game-development.png") no-repeat;
+}
+
+.with-love:before {
+  background: url("../../images/with-love.png") no-repeat;
+}
+
+.team-section {
+  background: url("../../images/team-bg.png") 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.team-list {
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.team-list li {
+  width: 240px;
+  padding: 0 10px;
+}
+.team-list .img-wrap {
+  width: 220px;
+  height: 226px;
+}
+
+.team-member {
+  border: 1px solid #7e7993;
+}
+.team-member h3 {
+  font: 13px "RobotoBlack", sans-serif;
+  margin: 10px;
+}
+.team-member p {
+  font: 13px "RobotoLight", sans-serif;
+  margin-bottom: 10px;
+}
+
+.our-works-section .our-works-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.our-works-section h2, .our-works-section a {
+  color: #413d4b;
+}
+.our-works-section a {
+  font: 14px "RobotoLight", sans-serif;
+}
+.our-works-section a i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer {
