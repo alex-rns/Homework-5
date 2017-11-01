@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------------------------------------------------------------------------- */
 /*------------------------------RESET DEFAULT STYLES-------------------------------- */
 /*---------------------------------------------------------------------------------- */
@@ -11,7 +12,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font: 14px/24px PlayfairDisplayRegular, sans-serif;
+  font: 16px/26px PlayfairDisplayRegular, sans-serif;
   background: #fff;
   color: #fff;
 }
@@ -75,13 +76,13 @@ a:hover {
 }
 
 ::-webkit-input-placeholder {
-  font: 14px/24px PlayfairDisplay, serif;
-  color: #282828;
+  font: 14px "RobotoLight", sans-serif;
+  color: #a09ea5;
 }
 
 ::-moz-placeholder {
-  color: #282828;
-  font: 14px/24px PlayfairDisplay, serif;
+  color: #a09ea5;
+  font: 14px "RobotoLight", sans-serif;
 }
 
 /*---------------------------------------------------------------------------------- */
@@ -192,6 +193,9 @@ a:hover {
   font-family: "FontAwesome";
   src: url("../../../fonts/fontawesome.otf");
 }
+.white-section h2 {
+  color: #413d4b;
+}
 .white-section p {
   color: #817f86;
 }
@@ -226,7 +230,7 @@ p {
 }
 
 section {
-  padding: 60px 10px;
+  padding: 60px 0;
 }
 
 header {
@@ -249,7 +253,7 @@ button {
   background: none;
   text-transform: uppercase;
   color: #00e0d0;
-  padding: 15px;
+  padding: 15px 25px;
   border: 1px solid #00e0d0;
 }
 button:hover {
@@ -476,10 +480,94 @@ button:hover {
   margin-left: 10px;
   font-size: 18px;
 }
+.our-works-section button {
+  display: block;
+  margin: 0 auto;
+}
 
 .works-list {
+  margin-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
+}
+.works-list li {
+  flex-grow: 1;
+}
+.works-list li img {
+  width: 100%;
+}
+
+.feedback-section {
+  height: 100vh;
+  background: url("../../images/testimonials-bg.png") 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.feedback-section .container {
+  display: flex;
+  align-items: center;
+}
+.feedback-section blockquote {
+  margin: 0 80px;
+  color: #f0f0f2;
+}
+.feedback-section blockquote:before {
+  content: "“";
+  font-family: Georgia, serif;
+  font-size: 90px;
+  margin-bottom: 70px;
+}
+.feedback-section blockquote p {
+  color: #b5b3be;
+  font: 16px/26px "PlayfairDisplayRegular", sans-serif;
+  margin-bottom: 50px;
+}
+.feedback-section blockquote h3 {
+  text-transform: uppercase;
+  font: 14px/22px "RobotoBlack", sans-serif;
+}
+.feedback-section blockquote span {
+  color: #b5b3be;
+  text-transform: uppercase;
+  font: 13px "RobotoLight", sans-serif;
+}
+
+.form-brands-section h2 {
+  margin-bottom: 30px;
+}
+.form-brands-section .container {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.form-brands-section form {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.form-brands-section form input, .form-brands-section form textarea {
+  padding: 15px;
+  resize: none;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+.form-brands-section form button {
+  width: 130px;
+}
+.form-brands-section .brands {
+  margin-left: 100px;
+  min-width: 450px;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brand-list li {
+  min-width: 200px;
+  margin-bottom: 60px;
 }
 
 .main-footer {
@@ -490,10 +578,39 @@ button:hover {
   position: relative;
   z-index: 1;
 }
+.main-footer .logo img {
+  margin-bottom: 40px;
+}
+.main-footer .our-studio h3, .main-footer .stay-in-touch h3 {
+  margin-bottom: 50px;
+}
+.main-footer h3 {
+  padding-top: 15px;
+  text-transform: uppercase;
+  font: 15px/26px "RobotoBlack", sans-serif;
+}
 .main-footer .top-footer {
   text-align: left;
   display: flex;
   justify-content: space-between;
+}
+.main-footer form input {
+  border: 1px solid #9e98b1;
+  background: inherit;
+  height: 40px;
+  padding: 10px;
+}
+.main-footer form input[type=submit] {
+  font-family: "FontAwesome", serif;
+  position: relative;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  width: 50px;
+}
+.main-footer form input[type=submit]:before {
+  position: absolute;
+  content: "123123";
+  top: 0;
 }
 .main-footer .bottom-footer {
   display: flex;
