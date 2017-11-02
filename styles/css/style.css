@@ -186,6 +186,10 @@ a:hover {
   src: url("../../../fonts/Roboto-Light.ttf");
 }
 @font-face {
+  font-family: "RobotoRegular";
+  src: url("../../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
   font-family: "HammersmithOne";
   src: url("../../../fonts/HammersmithOne-regular.ttf");
 }
@@ -378,14 +382,12 @@ button:hover {
   align-content: center;
   flex-wrap: wrap;
 }
-.expertise-section .expertise-list img {
-  padding-bottom: 30px;
-}
 .expertise-section .expertise-list li {
   padding-top: 70px;
   width: 350px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   position: relative;
+  border: 1px #eeeeee solid;
 }
 .expertise-section .expertise-list li:before {
   content: "";
@@ -578,11 +580,14 @@ button:hover {
   position: relative;
   z-index: 1;
 }
+.main-footer .logo p {
+  padding-right: 40px;
+}
 .main-footer .logo img {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 .main-footer .our-studio h3, .main-footer .stay-in-touch h3 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .main-footer h3 {
   padding-top: 15px;
@@ -594,29 +599,88 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+.main-footer form {
+  margin-bottom: 25px;
+}
 .main-footer form input {
+  color: #fff;
   border: 1px solid #9e98b1;
   background: inherit;
   height: 40px;
   padding: 10px;
+  width: 210px;
+  margin-right: 10px;
 }
 .main-footer form input[type=submit] {
   font-family: "FontAwesome", serif;
-  position: relative;
   border: none;
-  background: rgba(255, 255, 255, 0.5);
-  width: 50px;
+  background: url(../../images/submit-icon.png) rgba(255, 255, 255, 0.5) no-repeat 50% 50%;
+  width: 70px;
+  transition: all 0.5s ease;
 }
-.main-footer form input[type=submit]:before {
-  position: absolute;
-  content: "123123";
-  top: 0;
+.main-footer form input[type=submit]:hover {
+  background: url(../../images/submit-icon.png) #00e0d0 no-repeat 50% 50%;
 }
 .main-footer .bottom-footer {
   display: flex;
   justify-content: space-between;
 }
 
+.our-studio p {
+  margin: 10px 30px;
+  position: relative;
+}
+.our-studio p:before {
+  font-size: 20px;
+  top: 0;
+  left: -30px;
+  position: absolute;
+  font-family: FontAwesome, serif;
+  content: "";
+}
+.our-studio .tel p:before {
+  content: "";
+}
+
+.social {
+  display: flex;
+}
+.social li {
+  margin-right: 5px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social .fa {
+  padding-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+  transition: all 0.5s ease;
+}
+.social .fa:hover {
+  background: #00ada1;
+}
+
 .logo, .our-studio, .stay-in-touch {
   width: 320px;
+  margin-bottom: 70px;
+}
+
+.bottom-footer p {
+  font: 14px/26px "RobotoRegular", sans-serif;
+}
+.bottom-footer ul {
+  display: flex;
+}
+.bottom-footer ul li {
+  font: 14px/26px "RobotoRegular", sans-serif;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+.bottom-footer ul li:last-child {
+  margin-right: 0;
 }
