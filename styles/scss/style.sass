@@ -4,6 +4,7 @@
 @import "base/variables"
 @import "base/mixins"
 @import "base/fonts"
+@import "../../images/brands/*.png"
 //@import "layout/header"
 
 //@import "layout/sections/welcome"
@@ -188,22 +189,11 @@ button
 
 
 
-@each $expertize-list-item in web-disign, branding-identity, mobile-app
+@each $expertize-list-item in web-design, branding-identity, mobile-app, search-optimization, game-development, with-love
+  .#{$expertize-list-item}:before
+    background: url("../../images/#{$expertize-list-item}.png") no-repeat
 
 
-
-.web-disign:before
-  background: url("../../images/web-design.png") no-repeat
-.branding-identity:before
-  background: url("../../images/branding-identity.png") no-repeat
-.mobile-app:before
-  background: url("../../images/mobile-app.png") no-repeat
-.search-optimization:before
-  background: url("../../images/search-optimization.png") no-repeat
-.game-development:before
-  background: url("../../images/game-development.png") no-repeat
-.with-love:before
-  background: url("../../images/with-love.png") no-repeat
 
 .team-section
   background: url("../../images/team-bg.png") 50% 50% no-repeat
@@ -255,8 +245,11 @@ button
   li
     flex-grow: 1
     img
-      //height: 200px
+      height: 200px
       width: 100%
+
+
+
 
 .feedback-section
   height: 100vh
