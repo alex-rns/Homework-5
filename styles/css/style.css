@@ -274,7 +274,7 @@ section {
 }
 
 .welcome-section {
-  background: url("../../../../images/welcome-bg.png") 50% 50% no-repeat;
+  background: url("../../images/welcome-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -378,7 +378,7 @@ button:hover {
 }
 
 .video-section {
-  background: url("../../../../images/our-story-bg.png") 50% 50% no-repeat;
+  background: url("../../images/our-story-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -468,7 +468,7 @@ button:hover {
 }
 
 .team-section {
-  background: url("../../../../images/team-bg.png") 50% 50% no-repeat;
+  background: url("../../images/team-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -545,7 +545,7 @@ button:hover {
 }
 
 .feedback-section {
-  background: url("../../../../images/testimonials-bg.png") 50% 50% no-repeat;
+  background: url("../../images/testimonials-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -631,7 +631,7 @@ button:hover {
 .main-footer {
   padding: 70px 0;
   height: 400px;
-  background: url("../../../../images/footer-bg.png") 50% 50% no-repeat;
+  background: url("../../images/footer-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
