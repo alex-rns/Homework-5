@@ -1,0 +1,26 @@
+.feedback-section
+  @extend %fool-height
+  background: url("../../../../images/testimonials-bg.png") 50% 50% no-repeat
+  +background-size(cover)
+  .container
+    +display-flex
+    +align-items(center)
+  blockquote
+    margin: 0 80px
+    color: #fff
+    &:before
+      content: '\201C'
+      font-family: Georgia, serif
+      font-size: 90px
+      margin-bottom: 70px
+    p
+      color: #e9e8eb
+      font: 16px / 26px "PlayfairDisplayRegular", sans-serif
+      margin-bottom: 50px
+    h3
+      text-transform: uppercase
+      font: 14px / 22px "RobotoBlack", sans-serif
+    span
+      color: #e9e8eb
+      text-transform: uppercase
+      font: 13px "RobotoLight", sans-serif

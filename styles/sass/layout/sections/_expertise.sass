@@ -1,0 +1,35 @@
+.expertise-section
+  .expertise-list
+    text-align: center
+    +display-flex
+    +align-content(center)
+    +flex-wrap(wrap)
+    li
+      width: calc(100% / 3)
+      padding-bottom: 30px
+      border-top: 1px #ebebeb solid
+      border-right: 1px #ebebeb solid
+      &:before
+        content: ""
+        display: block
+        margin: 30px auto
+        width: 50px
+        height: 50px
+      &:nth-child(-n+3)
+        border-top: none
+      &:nth-child(3n)
+        border-right: none
+      &:last-child
+        border-right: none
+    p
+      text-align: center
+      padding: 0 50px
+    h3
+      font: 14px "RobotoBlack", sans-serif
+      text-transform: uppercase
+      color: $white-section-color-h-text
+      padding-bottom: 20px
+
+@each $expertize-list-item in web-design, branding-identity, mobile-app, search-optimization, game-development, with-love
+  .#{$expertize-list-item}:before
+    background: url("../../images/#{$expertize-list-item}.png") no-repeat

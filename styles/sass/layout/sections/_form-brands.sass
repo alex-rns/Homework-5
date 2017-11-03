@@ -1,0 +1,29 @@
+.form-brands-section
+  h2
+    margin-bottom: 30px
+  .container
+    text-align: left
+    +display-flex
+    +justify-content(space-between)
+  form
+    min-width: 500px
+    +display-flex
+    +flex-direction(column)
+    input, textarea
+      padding: 15px
+      resize: none
+      border: 1px solid #e5e5e5
+      margin-bottom: 20px
+    button
+      width: 130px
+  .brands
+    margin-left: 100px
+    min-width: 450px
+.brand-list
+  +display-flex
+  +align-items(center)
+  +justify-content(space-between)
+  +flex-wrap(wrap)
+  li
+    min-width: 200px
+    margin-bottom: 60px

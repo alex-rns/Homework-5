@@ -233,7 +233,10 @@ header {
   display: flex;
 }
 .header-nav ul li {
-  margin-right: 15px;
+  margin: 15px;
+}
+.header-nav ul li:last-child {
+  margin-right: 0;
 }
 .header-nav .active {
   color: #00e0d0;
@@ -264,15 +267,18 @@ section {
   padding: 60px 0;
 }
 
-.welcome-section {
+.welcome-section, .video-section, .feedback-section {
   height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-section {
   background: url("../../../../images/welcome-bg.png") 50% 50% no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative;
-  z-index: 1;
   padding: 15px 10px;
 }
 
@@ -372,11 +378,11 @@ button:hover {
 }
 
 .video-section {
-  height: 100vh;
-  background: url("../../images/our-story-bg.png") 50% 50% no-repeat;
+  background: url("../../../../images/our-story-bg.png") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
-  position: relative;
-  z-index: 1;
 }
 .video-section .container {
   display: -webkit-flex;
@@ -462,7 +468,10 @@ button:hover {
 }
 
 .team-section {
-  background: url("../../images/team-bg.png") 50% 50% no-repeat;
+  background: url("../../../../images/team-bg.png") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -519,29 +528,28 @@ button:hover {
   display: block;
   margin: 0 auto;
 }
-
-.works-list {
+.our-works-section .works-list {
   margin-bottom: 70px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.works-list li {
+.our-works-section .works-list li {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.works-list li img {
+.our-works-section .works-list li img {
   height: 200px;
   width: 100%;
 }
 
 .feedback-section {
-  height: 100vh;
-  background: url("../../images/testimonials-bg.png") 50% 50% no-repeat;
+  background: url("../../../../images/testimonials-bg.png") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
-  position: relative;
-  z-index: 1;
 }
 .feedback-section .container {
   display: -webkit-flex;
@@ -623,7 +631,10 @@ button:hover {
 .main-footer {
   padding: 70px 0;
   height: 400px;
-  background: url("../../images/footer-bg.png") 50% 50% no-repeat;
+  background: url("../../../../images/footer-bg.png") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   z-index: 1;
