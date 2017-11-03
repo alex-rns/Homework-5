@@ -1,140 +1,23 @@
 @import "compass/css3"
 @import "base/reset"
-
 @import "base/variables"
-@import "base/mixins"
 @import "base/fonts"
-//@import "layout/header"
-
-//@import "layout/sections/welcome"
-
-
+@import "layout/header"
+@import "layout/sections/welcome"
+@import "layout/sections/our-story"
 
 
 
-.white-section
-  h2
-    color: $white-section-color-h-text
-  p
-    color: $gray
-  header
-    h2
-      color: $white-section-color-h-text
-    p
-      margin-bottom: 10px
-      color: $gray
-h2
-  text-transform: uppercase
-  font: 22px "PlayfairDisplayBold", sans-serif
-  padding-bottom: 10px
-p
-  font: 14px / 24px "RobotoLight", sans-serif
-.wrapper
-  min-height: calc(100% - 400px)
-.container
-  max-width: 960px
-  margin: 0 auto
-  text-align: center
-  height: 100%
-section
-  padding: 60px 0
-header
-  padding-bottom: 60px
-.vertical-line:after
-  margin: 15px auto
-  display: block
-  content: ""
-  width: 50px
-  height: 2px
-  background-color:  #655c80
-
-button
-  margin: 20px 0
-  transition: all 0.5s ease
-  font: 16px "HammersmithOne", sans-serif
-  background: none
-  text-transform: uppercase
-  color: $accent-color
-  padding: 10px 20px
-  border: 1px solid $accent-color
-  &:hover
-    background: $accent-color
-    color: inherit
-
-.colored-background
-  &:before
-    background: $bg-color
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    opacity: 0.85
-    z-index: -1
-
-.welcome-section
-  height: 100vh
-  background: url("../../images/welcome-bg.png") 50% 50% no-repeat
-  background-size: cover
-  position: relative
-  z-index: 1
-  padding: 15px 10px
-
-.top-header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: 0
-  img
-    height: 50px
-    width: 140px
-  h1
-    display: inline-block
-    text-indent: -9999px
-.header-nav
-  text-transform: uppercase
-  font: 13px "Roboto Black", sans-serif
-  ul
-    display: flex
-    li
-      margin-right: 15px
-  .active
-    color: $accent-color
-
-.welcome-info-center
-  height: 100%
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  .welcome-info
-    h2
-      text-transform: capitalize
-      font: 32px "PlayfairDisplayBlack", sans-serif
-    p
-      max-width: 780px
-      margin-bottom: 30px
-  .vertical-line:after
-    margin: 30px auto 10px
-    background: $accent-color
 
 
 
-.our-story-section
-  header
-    padding-bottom: 20px
-  .container
-    justify-content: center
-    display: flex
-  .our-story-text
-    margin-left: 100px
-    text-align: left
-  img
-    width: 230px
-    height: 230px
-  p
-    margin-bottom: 10px
+
+
+
+
+
+
+
 
 
 .video-section
@@ -144,9 +27,9 @@ button
   position: relative
   z-index: 1
   .container
-    display: flex
-    flex-direction: column
-    justify-content: center
+    +display-flex
+    +flex-direction(column)
+    +justify-content(center)
   p
     font-size: 120px
     margin-bottom: 35px
@@ -157,9 +40,9 @@ button
 .expertise-section
   .expertise-list
     text-align: center
-    display: flex
-    align-content: center
-    flex-wrap: wrap
+    +display-flex
+    +align-content(center)
+    +flex-wrap(wrap)
     li
       width: calc(100% / 3)
       padding-bottom: 30px
@@ -203,8 +86,8 @@ button
 .team-list
   margin-bottom: 70px
   text-transform: uppercase
-  display: flex
-  justify-content: center
+  +display-flex
+  +justify-content(center)
   li
     width: 240px
     padding: 0 10px
@@ -224,8 +107,8 @@ button
 
 .our-works-section
   .our-works-header
-    display: flex
-    justify-content: space-between
+    +display-flex
+    +justify-content(space-between)
     margin-bottom: 35px
   h2, a
     color: $white-section-color-h-text
@@ -240,10 +123,10 @@ button
 
 .works-list
   margin-bottom: 70px
-  display: flex
-  flex-wrap: wrap
+  +display-flex
+  +flex-wrap(wrap)
   li
-    flex-grow: 1
+    +flex(1 1 auto)
     img
       height: 200px
       width: 100%
@@ -258,8 +141,8 @@ button
   position: relative
   z-index: 1
   .container
-    display: flex
-    align-items: center
+    +display-flex
+    +align-items(center)
   blockquote
     margin: 0 80px
     color: #fff
@@ -285,12 +168,12 @@ button
     margin-bottom: 30px
   .container
     text-align: left
-    display: flex
-    justify-content: space-between
+    +display-flex
+    +justify-content(space-between)
   form
     min-width: 500px
-    display: flex
-    flex-direction: column
+    +display-flex
+    +flex-direction(column)
     input, textarea
       padding: 15px
       resize: none
@@ -302,9 +185,10 @@ button
     margin-left: 100px
     min-width: 450px
 .brand-list
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
+  +display-flex
+  +align-items(center)
+  +justify-content(space-between)
+  +flex-wrap(wrap)
   li
     min-width: 200px
     margin-bottom: 60px
@@ -330,8 +214,8 @@ button
     font: 15px/26px "RobotoBlack" ,sans-serif
   .top-footer
     text-align: left
-    display: flex
-    justify-content: space-between
+    +display-flex
+    +justify-content(space-between)
   form
     margin-bottom: 25px
     input
@@ -347,14 +231,14 @@ button
       border: none
       background: url(../../images/submit-icon.png) rgba(255,255,255, .5) no-repeat 50% 50%
       width: 70px
-      transition: all 0.5s ease
+      transition: $transition
       &:hover
         background: url(../../images/submit-icon.png) $accent-color no-repeat 50% 50%
 
 
   .bottom-footer
-    display: flex
-    justify-content: space-between
+    +display-flex
+    +justify-content(space-between)
 
 .our-studio
   p
@@ -374,7 +258,7 @@ button
 
 
 .social
-  display: flex
+  +display-flex
   li
     margin-right: 5px
     &:last-child
@@ -387,7 +271,7 @@ button
     height: 35px
     border-radius: 50%
     border: 1px solid #eeeeee
-    transition: all 0.5s ease
+    transition: $transition
     &:hover
       background: darken($accent-color, 10%)
 
@@ -399,7 +283,7 @@ button
   p
     font: 14px /26px "RobotoRegular",sans-serif
   ul
-    display: flex
+    +display-flex
     li
       font: 14px /26px "RobotoRegular",sans-serif
       text-transform: uppercase
