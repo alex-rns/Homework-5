@@ -19,5 +19,13 @@
   src: url("../../../fonts/Roboto-Light.ttf"); }
 
 @font-face {
+  font-family: "RobotoRegular";
+  src: url("../../../fonts/Roboto-Regular.ttf"); }
+
+@font-face {
   font-family: "HammersmithOne";
   src: url("../../../fonts/HammersmithOne-regular.ttf"); }
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../../../fonts/fontawesome.otf"); }

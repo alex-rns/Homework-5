@@ -69,7 +69,7 @@ a {
 }
 a:link, a:visited {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -167,35 +167,42 @@ a:hover {
 
 @font-face {
   font-family: "PlayfairDisplayRegular";
-  src: url("../../../fonts/PlayfairDisplay-Regular.ttf");
+  src: url('../../fonts/PlayfairDisplayRegular/PlayfairDisplay-Regular.eot?1509656640');
+  src: url('../../fonts/PlayfairDisplayRegular/PlayfairDisplay-Regular.eot?&1509656640#iefix') format('embedded-opentype'), url('../../fonts/PlayfairDisplayRegular/PlayfairDisplay-Regular.woff?1509656677') format('woff'), url('../../fonts/PlayfairDisplayRegular/PlayfairDisplay-Regular.ttf?1509656660') format('truetype');
 }
 @font-face {
   font-family: "PlayfairDisplayBlack";
-  src: url("../../../fonts/PlayfairDisplay-Black.ttf");
+  src: url('../../fonts/PlayfairDisplayBlack/PlayfairDisplay-Black.eot?1509656640');
+  src: url('../../fonts/PlayfairDisplayBlack/PlayfairDisplay-Black.eot?&1509656640#iefix') format('embedded-opentype'), url('../../fonts/PlayfairDisplayBlack/PlayfairDisplay-Black.woff?1509656677') format('woff'), url('../../fonts/PlayfairDisplayBlack/PlayfairDisplay-Black.ttf?1509656660') format('truetype');
 }
 @font-face {
   font-family: "PlayfairDisplayBold";
-  src: url("../../../fonts/PlayfairDisplay-Bold.ttf");
+  src: url('../../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.eot?1509656640');
+  src: url('../../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.eot?&1509656640#iefix') format('embedded-opentype'), url('../../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.woff?1509656677') format('woff'), url('../../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.ttf?1509656660') format('truetype');
 }
 @font-face {
   font-family: "RobotoBlack";
-  src: url("../../../fonts/Roboto-Black.ttf");
+  src: url('../../fonts/RobotoBlack/Roboto-Black.eot?1509716392');
+  src: url('../../fonts/RobotoBlack/Roboto-Black.eot?&1509716392#iefix') format('embedded-opentype'), url('../../fonts/RobotoBlack/Roboto-Black.woff?1509716392') format('woff'), url('../../fonts/RobotoBlack/Roboto-Black.ttf?1509716392') format('truetype');
 }
 @font-face {
   font-family: "RobotoLight";
-  src: url("../../../fonts/Roboto-Light.ttf");
+  src: url('../../fonts/RobotoLight/Roboto-Light.eot?1509716286');
+  src: url('../../fonts/RobotoLight/Roboto-Light.eot?&1509716286#iefix') format('embedded-opentype'), url('../../fonts/RobotoLight/Roboto-Light.woff?1509716286') format('woff'), url('../../fonts/RobotoLight/Roboto-Light.ttf?1509716286') format('truetype');
 }
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../../../fonts/Roboto-Regular.ttf");
+  src: url('../../fonts/RobotoRegular/Roboto-Regular.eot?1489731780');
+  src: url('../../fonts/RobotoRegular/Roboto-Regular.eot?&1489731780#iefix') format('embedded-opentype'), url('../../fonts/RobotoRegular/Roboto-Regular.woff?1489731780') format('woff'), url('../../fonts/RobotoRegular/Roboto-Regular.ttf?1489731780') format('truetype');
 }
 @font-face {
   font-family: "HammersmithOne";
-  src: url("../../../fonts/HammersmithOne-regular.ttf");
+  src: url('../../fonts/HammersmithOneRegular/HammersmithOne-Regular.ttf?1509464875') format('truetype');
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url("../../../fonts/fontawesome.otf");
+  src: url('../../fonts/FontAwesome/fontAwesome-webfont.eot?1506890980');
+  src: url('../../fonts/FontAwesome/fontAwesome-webfont.eot?&1506890980#iefix') format('embedded-opentype'), url('../../fonts/FontAwesome/fontawesome-webfont.svg?1506890980') format('svg'), url('../../fonts/FontAwesome/fontawesome-webfont.woff?1506890980') format('woff'), url('../../fonts/FontAwesome/FontAwesome.otf?1506890980') format('opentype');
 }
 .white-section h2 {
   color: #413d4b;
@@ -257,7 +264,7 @@ button {
   background: none;
   text-transform: uppercase;
   color: #00e0d0;
-  padding: 15px 25px;
+  padding: 12px 25px;
   border: 1px solid #00e0d0;
 }
 button:hover {
@@ -367,7 +374,6 @@ button:hover {
 }
 .video-section p {
   font-size: 120px;
-  -webkit-text-stroke: 2px white;
   margin-bottom: 35px;
 }
 .video-section h3 {
@@ -378,25 +384,30 @@ button:hover {
 .expertise-section .expertise-list {
   text-align: center;
   display: flex;
-  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
 }
 .expertise-section .expertise-list li {
-  padding-top: 70px;
-  width: 350px;
-  padding-bottom: 60px;
-  position: relative;
-  border: 1px #eeeeee solid;
+  width: calc(100% / 3);
+  padding-bottom: 30px;
+  border-top: 1px #ebebeb solid;
+  border-right: 1px #ebebeb solid;
 }
 .expertise-section .expertise-list li:before {
   content: "";
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  top: 0;
+  display: block;
+  margin: 30px auto;
   width: 50px;
   height: 50px;
+}
+.expertise-section .expertise-list li:nth-child(-n+3) {
+  border-top: none;
+}
+.expertise-section .expertise-list li:nth-child(3n) {
+  border-right: none;
+}
+.expertise-section .expertise-list li:last-child {
+  border-right: none;
 }
 .expertise-section .expertise-list p {
   text-align: center;
@@ -456,7 +467,7 @@ button:hover {
 }
 
 .team-member {
-  border: 1px solid #7e7993;
+  border: 1px solid #817f86;
 }
 .team-member h3 {
   font: 13px "RobotoBlack", sans-serif;
@@ -465,6 +476,7 @@ button:hover {
 .team-member p {
   font: 13px "RobotoLight", sans-serif;
   margin-bottom: 10px;
+  color: #817f86;
 }
 
 .our-works-section .our-works-header {
@@ -513,7 +525,7 @@ button:hover {
 }
 .feedback-section blockquote {
   margin: 0 80px;
-  color: #f0f0f2;
+  color: #fff;
 }
 .feedback-section blockquote:before {
   content: "“";
@@ -522,7 +534,7 @@ button:hover {
   margin-bottom: 70px;
 }
 .feedback-section blockquote p {
-  color: #b5b3be;
+  color: #e9e8eb;
   font: 16px/26px "PlayfairDisplayRegular", sans-serif;
   margin-bottom: 50px;
 }
@@ -531,7 +543,7 @@ button:hover {
   font: 14px/22px "RobotoBlack", sans-serif;
 }
 .feedback-section blockquote span {
-  color: #b5b3be;
+  color: #e9e8eb;
   text-transform: uppercase;
   font: 13px "RobotoLight", sans-serif;
 }
@@ -605,7 +617,7 @@ button:hover {
 }
 .main-footer form input {
   color: #fff;
-  border: 1px solid #9e98b1;
+  border: 1px solid #817f86;
   background: inherit;
   height: 40px;
   padding: 10px;
