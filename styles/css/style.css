@@ -274,7 +274,8 @@ section {
 }
 
 .welcome-section {
-  background: url("../../images/welcome-bg.png") 50% 50% no-repeat;
+  background: url('../../images/welcome-bg.png?1509393352') no-repeat;
+  background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -378,7 +379,8 @@ button:hover {
 }
 
 .video-section {
-  background: url("../../images/our-story-bg.png") 50% 50% no-repeat;
+  background: url('../../images/our-story-bg.png?1509394400') no-repeat;
+  background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -468,7 +470,8 @@ button:hover {
 }
 
 .team-section {
-  background: url("../../images/team-bg.png") 50% 50% no-repeat;
+  background: url('../../images/team-bg.png?1509394339') no-repeat;
+  background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -545,7 +548,8 @@ button:hover {
 }
 
 .feedback-section {
-  background: url("../../images/testimonials-bg.png") 50% 50% no-repeat;
+  background: url('../../images/testimonials-bg.png?1509394774') no-repeat;
+  background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -631,7 +635,8 @@ button:hover {
 .main-footer {
   padding: 70px 0;
   height: 400px;
-  background: url("../../images/footer-bg.png") 50% 50% no-repeat;
+  background: url('../../images/footer-bg.png?1509396499') no-repeat;
+  background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -675,12 +680,12 @@ button:hover {
 .main-footer form input[type=submit] {
   font-family: "FontAwesome", serif;
   border: none;
-  background: url(../../images/submit-icon.png) rgba(255, 255, 255, 0.5) no-repeat 50% 50%;
+  background: url('../../images/submit-icon.png?1509651470') rgba(255, 255, 255, 0.5) no-repeat 50% 50%;
   width: 70px;
   transition: all 0.5s ease;
 }
 .main-footer form input[type=submit]:hover {
-  background: url(../../images/submit-icon.png) #00e0d0 no-repeat 50% 50%;
+  background: url('../../images/submit-icon.png?1509651470') #00e0d0 no-repeat 50% 50%;
 }
 .main-footer .bottom-footer {
   display: -webkit-flex;

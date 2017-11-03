@@ -1,7 +1,8 @@
 .main-footer
   padding: 70px 0
   height: 400px
-  background: url("../../images/footer-bg.png") 50% 50% no-repeat
+  background: image-url("footer-bg.png") no-repeat
+  background-position: center
   +background-size(cover)
   position: relative
   z-index: 1
@@ -34,11 +35,11 @@
     input[type=submit]
       font-family: "FontAwesome", serif
       border: none
-      background: url(../../images/submit-icon.png) rgba(255,255,255, .5) no-repeat 50% 50%
+      background: image-url("submit-icon.png") rgba(255,255,255, .5) no-repeat 50% 50%
       width: 70px
       transition: $transition
       &:hover
-        background: url(../../images/submit-icon.png) $accent-color no-repeat 50% 50%
+        background: image-url("submit-icon.png") $accent-color no-repeat 50% 50%
   .bottom-footer
     +display-flex
     +justify-content(space-between)
