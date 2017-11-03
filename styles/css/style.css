@@ -211,7 +211,6 @@ a:hover {
   color: #817f86;
 }
 .white-section header h2 {
-  padding-bottom: 5px;
   color: #413d4b;
 }
 .white-section header p {
@@ -222,7 +221,7 @@ a:hover {
 h2 {
   text-transform: uppercase;
   font: 22px "PlayfairDisplayBold", sans-serif;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 p {
@@ -249,12 +248,12 @@ header {
 }
 
 .vertical-line:after {
-  margin: 10px auto;
+  margin: 15px auto;
   display: block;
   content: "";
   width: 50px;
   height: 2px;
-  background-color: #c6c4c9;
+  background-color: #655c80;
 }
 
 button {
@@ -264,7 +263,7 @@ button {
   background: none;
   text-transform: uppercase;
   color: #00e0d0;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border: 1px solid #00e0d0;
 }
 button:hover {
@@ -330,11 +329,12 @@ button:hover {
   justify-content: center;
 }
 .welcome-info-center .welcome-info h2 {
+  text-transform: capitalize;
   font: 32px "PlayfairDisplayBlack", sans-serif;
 }
 .welcome-info-center .welcome-info p {
   max-width: 780px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .welcome-info-center .vertical-line:after {
   margin: 30px auto 10px;
@@ -471,11 +471,11 @@ button:hover {
 }
 .team-member h3 {
   font: 13px "RobotoBlack", sans-serif;
-  margin: 10px;
+  margin: 12px;
 }
 .team-member p {
   font: 13px "RobotoLight", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #817f86;
 }
 
