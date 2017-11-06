@@ -204,7 +204,7 @@ a:hover {
   src: url('../../fonts/FontAwesome/fontAwesome-webfont.eot?1506890980');
   src: url('../../fonts/FontAwesome/fontAwesome-webfont.eot?&1506890980#iefix') format('embedded-opentype'), url('../../fonts/FontAwesome/fontawesome-webfont.svg?1506890980') format('svg'), url('../../fonts/FontAwesome/fontawesome-webfont.woff?1506890980') format('woff'), url('../../fonts/FontAwesome/FontAwesome.otf?1506890980') format('opentype');
 }
-header {
+.main-header {
   padding-bottom: 60px;
 }
 
@@ -394,11 +394,11 @@ button:hover {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.video-section p {
+.video-section i {
   font-size: 120px;
   margin-bottom: 35px;
 }
-.video-section h3 {
+.video-section p {
   text-transform: uppercase;
   font: 16px "RobotoBlack", sans-serif;
 }
@@ -446,27 +446,27 @@ button:hover {
 }
 
 .web-design:before {
-  background: url("../../images/web-design.png") no-repeat;
+  background: url("../../images/web-design.png") 50% no-repeat;
 }
 
 .branding-identity:before {
-  background: url("../../images/branding-identity.png") no-repeat;
+  background: url("../../images/branding-identity.png") 50% no-repeat;
 }
 
 .mobile-app:before {
-  background: url("../../images/mobile-app.png") no-repeat;
+  background: url("../../images/mobile-app.png") 50% no-repeat;
 }
 
 .search-optimization:before {
-  background: url("../../images/search-optimization.png") no-repeat;
+  background: url("../../images/search-optimization.png") 50% no-repeat;
 }
 
 .game-development:before {
-  background: url("../../images/game-development.png") no-repeat;
+  background: url("../../images/game-development.png") 50% no-repeat;
 }
 
 .with-love:before {
-  background: url("../../images/with-love.png") no-repeat;
+  background: url("../../images/with-love.png") 50% no-repeat;
 }
 
 .team-section {
@@ -487,10 +487,11 @@ button:hover {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .team-list li {
-  width: 240px;
-  padding: 0 10px;
+  padding: 10px;
 }
 .team-list .img-wrap {
   width: 220px;
@@ -569,7 +570,6 @@ button:hover {
   content: "“";
   font-family: Georgia, serif;
   font-size: 90px;
-  margin-bottom: 70px;
 }
 .feedback-section blockquote p {
   color: #e9e8eb;
@@ -608,6 +608,8 @@ button:hover {
   resize: none;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  outline: none;
+  font-size: 20px;
 }
 .form-brands-section form button {
   width: 130px;
@@ -645,7 +647,7 @@ button:hover {
   z-index: 1;
 }
 .main-footer .logo p {
-  padding-right: 40px;
+  margin-right: 40px;
 }
 .main-footer .logo img {
   margin-bottom: 34px;
@@ -694,11 +696,11 @@ button:hover {
   justify-content: space-between;
 }
 
-.our-studio p {
+.our-studio p, .our-studio a {
   margin: 10px 30px;
   position: relative;
 }
-.our-studio p:before {
+.our-studio p:before, .our-studio a:before {
   font-size: 20px;
   top: 0;
   left: -30px;
@@ -706,7 +708,10 @@ button:hover {
   font-family: FontAwesome, serif;
   content: "";
 }
-.our-studio .tel p:before {
+.our-studio .tel a {
+  font-size: 20px;
+}
+.our-studio .tel a:before {
   content: "";
 }
 
